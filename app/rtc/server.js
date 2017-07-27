@@ -11,7 +11,12 @@ io.sockets.on('connection', function (socket){
   });
 
   socket.on('create or join', function (room) {
-    var numClients = io.sockets.clients(room).length;
+    // var numClients = io.sockets.clients(room).length;
+	var numClients = 0;
+    var clientList = io.sockets.adapter.rooms[room];
+    if(typeof clientsList != 'undefined'){
+        numClients = clientsList.length;
+    }
 
     console.log('clients', numClients);
 

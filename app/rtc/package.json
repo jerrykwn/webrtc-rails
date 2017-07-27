@@ -13,7 +13,7 @@
     "url": "https://github.com/XescuGC/webrtc-rails"
   },
   "dependencies": {
-    "socket.io": "0.9.16"
+   "socket.io": "1.7.3"
   },
   "engines": {
     "node": ">= 0.4.0"
